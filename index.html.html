@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Random String Generator </title>
+</head>
+
+<script>
+    function randomString() {
+        var question = ["Have a great day!", "Test 3", "Pinapalpitate ka na? Isang baso pa!", "test 4", "test 5", "test 6"];
+        var i = Math.floor(Math.random() * question.length);
+        document.getElementById("randomfield").innerHTML = question[i];
+    }
+    window.onload = function () {
+        randomString();
+    } 
+</script>
+
+<body>
+    <center>
+        <h3>
+            <p id="randomfield" style="color: green"></p>
+        </h3>
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style="text-align: center;"><a href="https://www.facebook.com/profile.php?id=100091432155444">facebook</a>
+        <br>
+        <a href="https://instagram.com/beanircafe?igshid=YmMyMTA2M2Y=">Instagram</a>
+        <br>
+        <a href="">Tiktok</a>
+    </p>
+</body>
+
+</html>
