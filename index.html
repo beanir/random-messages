@@ -8,13 +8,54 @@
 
 <script>
     function randomString() {
-        var question = ["Gusto kong magkape... MAGKAPERA!", "Panay ka KAPE! kaya ka KAPEnalitan", "Pinapalpitate ka na? Isang baso pa!", "Wait a minute kapeng mainit", "Ang Kape... sumasarap kapag ikaw ang KAPEling", "Huhulaan ko kung ano ka, ikaw ay kalahating tao at kalahating kape"];
+        var question = ["God is bigger than what you're facing right now",
+        "Your beautiful day starts with coffee",
+        "Stay kind even if the world is unfair",
+        "When you feel like quitting, take a sip of coffee and think about why you started",
+        "Chase your balang araw",
+        "Be positive. Drink coffee.",
+        "Choose to live, choose what makes youfeel alive",
+        "Today do amazing things. but first, coffee",
+        "Go where your heart takes you",
+        "Coffee with a friend is like capturing happiness in a cup",
+        "Live to the fullest, learn all the things you want",
+        "Failure isn't final until you quit",
+        "May mga bagay na talo ka at okay lang yun",
+        "You are so deeply capable of doing something beautiful with your life",
+        "Keep shining, beautiful one. The world need your light",
+        "Not everyone will understand what God has put on your heart. Do it anyway.",
+        "You're a rose, be with someone who isn't afraid of your thorns",
+        "Do it because it makes you happy",
+        "Have fun, even if it's not the same kind of fun everyone else is having"];
         var i = Math.floor(Math.random() * question.length);
         document.getElementById("randomfield").innerHTML = question[i];
     }
     window.onload = function () {
-        randomString();
+        randomString(); 
+        //it will refrain users to refresh more than 3 (for future promos and coupons)
+        /*if(localStorage.getItem('counter') < 3){
+            randomString(); 
+        }
+        if(localStorage.getItem('stopRefresh' === "true")){
+            stop();
+        }*/
     } 
+</script>
+
+<script type="text/javascript">
+    //it will refrain users to refresh more than 3 (for future promos and coupons)
+    /*window.addEventListener("unload", function () {
+        var count = parseInt(localStorage.getItem('counter') || 0);
+
+        localStorage.setItem('counter', ++count)
+    }, false);
+
+    
+    if (localStorage.getItem('counter') >= 3) {
+        alert('No more refresh for you :P')
+        localStorage.setItem('stopRefresh',true)
+        stop()
+    }*/
 </script>
 
 <body style="background-color:#fbe1cc;">
